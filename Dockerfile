@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -9,6 +9,6 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE ${PORT}
+EXPOSE 3333
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "start"]
