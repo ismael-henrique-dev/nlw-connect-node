@@ -12,4 +12,4 @@ RUN npm run build
 
 EXPOSE 3333
 
-CMD ["sh", "-c", "npx drizzle-kit migrate && node dist/server.js"]
+CMD ["sh", "-c", "npx drizzle-kit migrate && node dist/server.mjs"]
